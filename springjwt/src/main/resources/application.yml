@@ -1,0 +1,21 @@
+
+spring:
+  security.user.password: Test
+  security.filter.order: 10
+  profiles.active: dev
+  main.banner-mode: off
+  datasource:
+    url: jdbc:h2:file:~/data/testdb
+    username: springapi
+    password: apiServices01
+    driverClassName: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+springdoc.swagger-ui.path: /swagger-ui.html
+server:
+     port: 8080
+     
+mpirixan.app.jwtSecret: mpirixanSecretKey
+mpirixan.app.jwtExpirationMs: 86400000
